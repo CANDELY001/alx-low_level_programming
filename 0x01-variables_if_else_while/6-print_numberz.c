@@ -6,9 +6,9 @@
 */
 int main(void)
 {
-	unsigned int x = '0';
+	unsigned int x = 0;
 
-	while (x < '10')
+	while (x < 10)
 	{
 		putchar(x);
 		x = x + 1;
