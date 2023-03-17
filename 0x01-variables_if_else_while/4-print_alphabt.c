@@ -12,7 +12,7 @@ int main(void)
 	{
 		if (a == 'q' || a == 'e')
 		{
-			continue;
+			a = a + 1;
 		}
 		putchar(a);
 		a = a + 1;
