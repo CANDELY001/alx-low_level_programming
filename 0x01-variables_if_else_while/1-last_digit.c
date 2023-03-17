@@ -5,7 +5,7 @@
 /**
  * main - A program that print the last digit of the
  * number stored in the variable n
- * Return : 0
+ * Return : 0 (Success)
 */
 /* betty style doc for function main goes there */
 int main(void)
