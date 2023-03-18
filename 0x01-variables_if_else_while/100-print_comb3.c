@@ -9,15 +9,21 @@ int main(void)
 	int x = '0';
 	int y;
 
-	for (; x <= 9; x++)
+	for (; x <= '8'; x++)
 	{
-		for (y = x; y <= 9; y++)
+		for (y = x; y <= '9'; y++)
 		{
-			putchar(x);
-			putchar(y);
+			if (x < y)
+			{
+				putchar(x);
+				putchar(y);
+				if (y != '8' || x != '9')
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
 		}
-		putchar(',');
-		putchar(' ');
 	}
 	putchar('\n');
 	return (0);
