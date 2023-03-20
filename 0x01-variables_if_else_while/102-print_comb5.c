@@ -20,7 +20,7 @@ int main(void)
 			if (a == 98 && b == 99)
 			{
 				continue;
-			} 
+			}
 			putchar(',');
 			putchar(' ');
 		}
