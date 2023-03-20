@@ -8,11 +8,11 @@ int main(void)
 {
 	int a = '0', b;
 
-	for (; a <= '98'; a++)
+	for (; a <= 98; a++)
 	{
-		for (b = a + 1; b <= '99'; b++)
+		for (b = a + 1; b <= 99; b++)
 		{
-			if (a != '98' || b != '99')
+			if (a != 98 || b != 99)
 			{
 				putchar((a / 10) + '0');
 				putchar((a % 10) + '0');
