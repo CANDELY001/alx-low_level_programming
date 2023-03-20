@@ -6,13 +6,13 @@
 */
 int main(void)
 {
-        int x = '0';
-        int y, z;
+	int x = '0';
+	int y, z;
 
-        for (; x <= '8'; x++)
-        {
-                for (y = x; y <= '8'; y++)
-                {
+	for (; x <= '8'; x++)
+	{
+		for (y = x; y <= '8'; y++)
+		{
 			for (z = y; z <= '9'; z++)
 			{
 				if (x < y)
@@ -29,8 +29,8 @@ int main(void)
 						putchar(' ');
 					}
 				}
-                        }
-                }
-        }
-        return (0);
+			}
+		}
+	}
+	return (0);
 }
