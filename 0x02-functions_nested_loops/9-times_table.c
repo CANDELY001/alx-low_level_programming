@@ -13,19 +13,19 @@ void times_table(void)
 			res = b * a;
 			if (res < 10)
 			{
-				putchar(' ');
-				putchar(res + '0');
+				_putchar(' ');
+				_putchar(res + '0');
 			} else
 			{
-				putchar(res / 10 + '0');
-				putchar(res % 10 + '0');
+				_putchar(res / 10 + '0');
+				_putchar(res % 10 + '0');
 			}
 			if (b < 9)
 			{
-				putchar(',');
-				putchar(' ');
+				_putchar(',');
+				_putchar(' ');
 			}
 		}
-		putchar('\n');
+		_putchar('\n');
 	}
 }
