@@ -2,6 +2,7 @@
 /**
  * positive_or_negative - A function
  * @n: parameter
+ * Return: void return
  */
 void postitive_or_negative(int n)
 {
