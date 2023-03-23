@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include "main.h"
 /**
  * positive_or_negative - A function
  * @n: parameter
