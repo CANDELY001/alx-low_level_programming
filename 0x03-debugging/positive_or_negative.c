@@ -2,9 +2,8 @@
 /**
  * positive_or_negative - A function
  * @n: parameter
- * Return: 0 (Success)
  */
-int postitive_or_negative(int n)
+void postitive_or_negative(int n)
 {
 	if (n > 0)
 	{
@@ -16,5 +15,4 @@ int postitive_or_negative(int n)
 	{
 		printf("%d is negative\n", n);
 	}
-	return (0);
 }
