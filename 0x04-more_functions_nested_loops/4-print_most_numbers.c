@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * print_most_numbers -  a function that prints the numbers, exluding 2 and 4
- * Return: void
+ * print_most_numbers - Write a function that prints the numbers, from 0 to 9
+ * without 2 and 4
  */
 void print_most_numbers(void)
 {
@@ -9,7 +9,7 @@ void print_most_numbers(void)
 
 	for (c = '0'; c <= '9'; c++)
 	{
-		if( c != 2 || c != 4)
+		if (c != 2 || c != 4)
 		{
 			_putchar(c);
 		}
