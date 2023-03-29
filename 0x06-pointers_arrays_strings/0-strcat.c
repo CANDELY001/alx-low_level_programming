@@ -9,7 +9,6 @@ char *_strcat(char *dest, char *src)
 {
 	int len = 0;
 	int len2 = 0, i;
-	
 
 	while (dest[len] != '\0')
 	{
@@ -17,7 +16,7 @@ char *_strcat(char *dest, char *src)
 	}
 	while (src[len2] != '\0')
 	{
-		len2 ++;
+		len2++;
 	}
 	for (i = 0; i < len2; i++)
 	{
