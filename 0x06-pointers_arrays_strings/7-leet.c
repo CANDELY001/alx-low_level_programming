@@ -6,13 +6,13 @@
  */
 char *leet(char *s)
 {
-	int i = 0, j = 0;
+	int i, j;
 	char *x = "aAeEoOtTlL";
 	char *y = "4433007711";
 
-	for (; s[i] != '\0'; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (; j < 10; j++)
+		for (j = 0; j < 10; j++)
 		{
 			if (s[i] == x[j])
 			{
