@@ -1,11 +1,11 @@
 #include "main.h"
 #include<stdio.h>
 /**
- * print_diagsums - function that prints the sum of the 
+ * print_diagsums - function that prints the sum of the
  * @a: parameter
  * @size: parameter
  * Return: void
- */
+*/
 void print_diagsums(int *a, int size)
 {
 	int sum1 = 0, sum2 = 0, i, j;
