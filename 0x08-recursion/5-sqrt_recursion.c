@@ -1,4 +1,5 @@
 #include "main.h"
+int sqrt_recursion(int n, int i);
 /**
  * _sqrt_recursion - a function that returns the natural square root of n
  * @n: paremeter
@@ -25,6 +26,10 @@ int _sqrt_recursion(int n)
  */
 int sqrt_recursion(int n, int i)
 {
+	if (i * i > n)
+	{
+		return (-1);
+	}
 
 	if (i * i == n)
 	{
