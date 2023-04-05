@@ -1,5 +1,5 @@
 #include "main.h"
-int prime_number(int n,int i);
+int prime_number(int n, int i);
 /**
  * is_prime_number -  a function that returns 1 if the input integer prime
  * @n: paremeter
@@ -11,7 +11,7 @@ int is_prime_number(int n)
 	{
 		return (0);
 	}
-	return ( prime_number(n, n - 1));
+	return (prime_number(n, n - 1));
 }
 /**
  * prime_number - a fucntion returns 1 if n prime, otherwise O
@@ -19,7 +19,7 @@ int is_prime_number(int n)
  * @i: parameter
  * Return: result
  */
-int prime_number(int n,int i)
+int prime_number(int n, int i)
 {
 	if (i == 1)
 	{
@@ -29,6 +29,6 @@ int prime_number(int n,int i)
 	{
 		return (0);
 	}
-	return (prime_number(n,i - 1));
+	return (prime_number(n, i - 1));
 }
 
