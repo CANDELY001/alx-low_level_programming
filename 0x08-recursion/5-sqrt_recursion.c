@@ -18,7 +18,7 @@ int _sqrt_recursion(int n)
 }
 
 /**
- * sqrt_resursion -  a function that return square root of n
+ * sqrt_recursion -  a function that return square root of n
  * @n: parameter
  * @i: paremeter
  * Return: result
