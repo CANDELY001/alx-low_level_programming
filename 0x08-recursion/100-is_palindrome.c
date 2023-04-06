@@ -1,6 +1,11 @@
 #include "main.h"
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
 int palindrom(char *s, char *c);
-char rev_recursion(char *s);
+char *rev_recursion(char *s);
+
 /**
  * is_palindrome - a function that returns 1 if a string is a palindrome
  * @s: parameter
@@ -8,12 +13,13 @@ char rev_recursion(char *s);
  */
 int is_palindrome(char *s)
 {
-	if (!*s)
+	if (strlen(s) <= 1)
 	{
-		return (0);
+		return (1);
 	}
-	return (palindrom(s, (char *) rev_recursion(s)));
+	return (palindrom(s, rev_recursion(s)));
 }
+
 /**
  * palindrom - a function that returns 1
  * @s: parameter
@@ -30,22 +36,23 @@ int palindrom(char *s, char *c)
 		}
 		return (palindrom(s + 1, c + 1));
 	}
+	return 1;
 }
+
 /**
  * rev_recursion - return the reverse of a string
  * @s: parameter
- * @c: paremeter
  * Return: result
  */
-char rev_recursion(char *s)
+char *rev_recursion(char *s)
 {
-	char *p;
-	unsigned int i = 0;
-
+	char *p = malloc(strlen(s) + 1);
 	if (*s)
 	{
-		rev_recursion(s + 1);
-		p[i++] = *s;
+		char *rev = rev_recursion(s + 1);
+		strcpy(p, rev);
+		p[strlen(rev)] = *s;
+		return (p);
 	}
 	return (p);
 }
