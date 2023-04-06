@@ -51,6 +51,7 @@ char *rev_recursion(char *s)
 	if (*s)
 	{
 		char *rev = rev_recursion(s + 1);
+
 		strcpy(p, rev);
 		p[strlen(rev)] = *s;
 		return (p);
