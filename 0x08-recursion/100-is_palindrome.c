@@ -36,7 +36,7 @@ int palindrom(char *s, char *c)
 		}
 		return (palindrom(s + 1, c + 1));
 	}
-	return 1;
+	return (1);
 }
 
 /**
@@ -47,6 +47,7 @@ int palindrom(char *s, char *c)
 char *rev_recursion(char *s)
 {
 	char *p = malloc(strlen(s) + 1);
+
 	if (*s)
 	{
 		char *rev = rev_recursion(s + 1);
