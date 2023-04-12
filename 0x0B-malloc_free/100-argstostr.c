@@ -30,7 +30,7 @@ char *argstostr(int ac, char **av)
 		size++;
 		i++;
 	}
-	tab = (char *) malloc((size + 1) * sizeof(char));
+	t = (char *) malloc((size + 1) * sizeof(char));
 	if (t == NULL)
 		return (NULL);
 
