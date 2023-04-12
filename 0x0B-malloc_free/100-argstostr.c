@@ -50,5 +50,5 @@ char *argstostr(int ac, char **av)
 	}
 	t[k] = '\0';
 
-	return (tab);
+	return (t);
 }
