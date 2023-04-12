@@ -3,6 +3,7 @@
 #include<stdio.h>
 #include <string.h>
 #include <stdlib.h>
+int word(char *s);
 /**
  * **strtow - function that splits a string into words
  * @str: parameter
