@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "main.h"
 #include <stddef.h>
+#include <string.h>
 /**
  * *string_nconcat - function that concatenates two strings
  * @s1: parameter
