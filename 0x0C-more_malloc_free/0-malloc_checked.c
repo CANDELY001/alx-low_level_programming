@@ -7,6 +7,7 @@
  * @b: parameter
  * Return: void
  */
+/* BY CHARIFA MASBAHI */
 void *malloc_checked(unsigned int b)
 {
 	char *p;
