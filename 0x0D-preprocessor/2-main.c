@@ -6,6 +6,6 @@
 /* BY CHARIFA MASBAHI*/
 int main(void)
 {
-	printf("%d\n",__FILE__);
+	printf("%d\n", __FILE__);
 	return (0);
 }
