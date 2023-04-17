@@ -50,7 +50,7 @@ char *_strdup(char *s)
 	size_t len = strlen(s) + 1;
 	char *copy = malloc(len);
 
-	if (copy)
+	if (!copy)
 	{
 		return (NULL);
 	}
