@@ -1,6 +1,7 @@
 #include "dog.h"
 #include <stdio.h>
 #include <stddef.h>
+#include <string.h>
 char *_strdup(char *s);
 /**
  * *new_dog - function that creates a new dog
