@@ -8,6 +8,6 @@
 /* BY CHARIFA MASBAHI*/
 void print_name(char *name, void (*f)(char *))
 {
-	if (name || f)
+	if (name && f)
 		f(name);
 }
