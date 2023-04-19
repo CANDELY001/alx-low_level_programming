@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 		exit(2);
 	}
 	arr = (char *)main;
-	
+
 	while (i < b)
 	{
 		if (i == b - 1)
