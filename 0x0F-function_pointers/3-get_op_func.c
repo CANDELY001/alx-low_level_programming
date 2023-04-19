@@ -18,9 +18,9 @@ int (*get_op_func(char *s))(int a, int b)
 	};
 	int i = 0;
 
-	while (i < 6)
+	while (ops[i].op)
 	{
-		if (strcmp(ops[i].op, s) == 0 || ops[i].op != NULL)
+		if (s[0] == ops[i].op[0] && ops[i].op != NULL)
 		{
 			return (ops[i].f);
 		}
