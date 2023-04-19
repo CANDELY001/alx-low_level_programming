@@ -21,7 +21,6 @@ int main(int argc, char *argv[])
 	if (get_op_func(argv[2]) == NULL || argv[2][1] != '\0')
 	{
 		printf("Error\n");
-		printf("%c\n",argv[1][1]);
 		exit(98);
 	}
 	if (!num2)
