@@ -1,4 +1,5 @@
 #include "3-calc.h"
+#include<string.h>
 /**
  * get_op_func - function that select the operating function
  * @s: parameter
@@ -15,11 +16,11 @@ int (*get_op_func(char *s))(int a, int b)
 		{"%", op_mod},
 		{NULL, NULL}
 	};
-	int i;
+	int i = 0;
 
 	while (i < 6)
 	{
-		if (ops[i].op  == s || ops[i].op != NULL)
+		if (strcmp(ops[i].op, s) == 0 && ops[i].op != NULL)
 		{
 			return (ops[i].f);
 		}

@@ -9,7 +9,8 @@
  */
 int main(int argc, char *argv[])
 {
-	int num1, num2;
+	int num1, num2, res;
+	char *c;
 
 	if (argc != 4)
 	{
@@ -18,16 +19,20 @@ int main(int argc, char *argv[])
 	}
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
-	if (get_op_func(argv[2]) == NULL || argv[2][1] != '\0')
+	c = (char *) argv[2];
+
+	if (get_op_func(c) == NULL)
 	{
 		printf("Error\n");
-		exit(98);
+		exit(99);
 	}
-	if (!num2)
+	if ((num2 == 0  && *c  == '/') || (num2 == 0 && *c  == '%'))
 	{
 		printf("Error\n");
-		exit(98);
+		exit(100);
 	}
-	printf("%d\n", get_op_func(argv[1])(num1, num2));
+	res = get_op_func(c)(num1, num2);
+
+	printf("%d\n", res);
 	return (0);
 }
