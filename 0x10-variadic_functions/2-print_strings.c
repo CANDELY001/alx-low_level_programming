@@ -3,7 +3,7 @@
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list ap;
-	int i = 0;
+	unsigned int i = 0;
 
 	if (*separator)
 	{
