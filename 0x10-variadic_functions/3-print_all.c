@@ -9,14 +9,13 @@
 /* BY CHARIFA MASBAHI*/
 void print_all(const char * const format, ...)
 {
-	va_list ap;
 	int i = 0;
-	char c_ap;
-	int i_ap;
-	float f_ap;
-	char *s_ap;
+	char *str, *sep = "";
 
-	va_start(ap, format);
+	va_list list;
+
+	va_start(list, format);
+
 	if (format)
 	{
 		while (format[i])
@@ -24,33 +23,28 @@ void print_all(const char * const format, ...)
 			switch (format[i])
 			{
 				case 'c':
-					c_ap = va_arg(ap, int);
-					printf("%c", c_ap);
+					printf("%s%c", sep, va_arg(list, int));
 					break;
 				case 'i':
-					i_ap = va_arg(ap, int);
-					printf("%d", i_ap);
+					printf("%s%d", sep, va_arg(list, int));
 					break;
 				case 'f':
-					f_ap = va_arg(ap, double);
-					printf("%f", f_ap);
+					printf("%s%f", sep, va_arg(list, double));
 					break;
 				case 's':
-					s_ap = va_arg(ap, char *);
-					printf("%s", s_ap ? s_ap : "(nil)");
+					str = va_arg(list, char *);
+
+					printf("%s%s", sep, (str != "")? str : "(nil)");
 					break;
 				default:
 					i++;
 					continue;
 			}
-
-			if (format[i + 1] != '\0')
-			{
-				printf(", ");
-			}
+			sep = ", ";
 			i++;
 		}
 	}
+
 	printf("\n");
-	va_end(ap);
+	va_end(list);
 }
