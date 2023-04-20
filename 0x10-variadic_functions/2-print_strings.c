@@ -11,6 +11,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		while (i < n)
 		{
 			char *str = va_arg(ap, char *);
+			
 			printf("%s", (!str) ? ("(nil)") : str);
 
 			if (i < n - 1)
