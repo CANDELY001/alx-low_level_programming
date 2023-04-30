@@ -24,6 +24,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		if (!(ls->next) || !ls)
 			return (-1);
 		ls = ls->next;
+		i++;
 	}
 	ls2 = ls->next;
 	ls->next = ls2->next;
