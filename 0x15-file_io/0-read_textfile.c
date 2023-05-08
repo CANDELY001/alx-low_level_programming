@@ -13,7 +13,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	if (!filename)
 		return (0);
-	fop = open(filename, 0_RDONLY);
+	fop = open(filename, O_RDONLY);
 	if (fop < 0)
 		return (0);
 	BUF = (char *) malloc(letters * sizeof(char));
