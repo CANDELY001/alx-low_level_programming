@@ -2,8 +2,8 @@
 
 /* BY CHARIFA MASBAHI*/
 
-/*
- * hash_table_create - creates a hash table
+/**
+ * hash_table_create -> creates a hash table
  * @size: parameter
  * Return: entry point
  */
